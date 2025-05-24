@@ -76,9 +76,10 @@ function App() {
       ) : (
         <>
           <input
+            type="text"
+            placeholder="enter topic"
             value={newQuestion}
             onChange={e => setNewQuestion(e.target.value)}
-            placeholder="enter topic"
           />
           <button onClick={createPoll} style={{ marginLeft: "1rem" }}>
             create poll
